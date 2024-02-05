@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarBookDomain.Entities
+namespace CarBook.Application.Features.CQRS.Results.AboutResults
 {
-    public class Banner
+    public class GetAboutByIdQueryResult
     {
-        public int BannerID { get; set; }
+        public int AboutID { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public string VideoDescription { get; set; }
-        public string VideoUrl { get; set; }
-    
+        public string ImageUrl { get; set; }
+
+
     }
 }
