@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\CQRS\Commands\" />
+    <ProjectReference Include="..\CarBookDomain\CarBook.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CarBookDomain\CarBook.Domain.csproj" />
+    <Folder Include="Features\CQRS\Queries\NewFolder\" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,23 @@
+using CarBook.Application.Features.CQRS.Handlers.AboutHandlers;
+using CarBook.Application.Interfaces;
+using CarBook.Persistence.Context;
+using CarBook.Persistence.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+// Context
+builder.Services.AddScoped<CarBookContext>();
+
+// Repository
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+// About Handler
+builder.Services.AddScoped<GetAboutQueryHandler>();
+builder.Services.AddScoped<GetAboutByIdQueryHandler>();
+builder.Services.AddScoped<CreateAboutCommandHandler>();
+builder.Services.AddScoped<RemoveAboutCommandHandler>();
+builder.Services.AddScoped<UpdateAboutCommandHandler>();
 
 // Add services to the container.
 
