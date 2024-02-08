@@ -10,8 +10,4 @@
     <ProjectReference Include="..\CarBookDomain\CarBook.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\CQRS\Queries\NewFolder\" />
-  </ItemGroup>
-
 </Project>
